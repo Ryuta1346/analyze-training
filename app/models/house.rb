@@ -9,7 +9,7 @@ class House < ApplicationRecord
   end
 
   def self.average_production(city, year, data)
-    self.sum_production(city, year, data) / self.count_houses(city, year, data)
+    sum_production(city, year, data) / count_houses(city, year, data)
   end
 
   def self.count_houses(city, year, data)
