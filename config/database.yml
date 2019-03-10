@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: ryuta_t_development
+  database: ryuta_t_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: ryuta_t_test
+  database: ryuta_t_test1
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: ryuta_t_production
+  database: ryuta_t_prod
   username: ryuta_t
   password: <%= ENV['RYUTA_T_DATABASE_PASSWORD'] %>
