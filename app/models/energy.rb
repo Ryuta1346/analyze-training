@@ -4,7 +4,7 @@ class Energy < ApplicationRecord
   validates :label, :house_id, :year, :month, :temperature, :daylight, :energy_production, presence: true
 
   def include_energy_data(year)
-    where(year: year).map { |e| [e.temperature, e.daylight, e.energy_production] }
+    where(year: year).pluck(:temperature, :daylight, :energy_production)
   end
 
 end

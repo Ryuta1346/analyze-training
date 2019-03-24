@@ -1,24 +1,6 @@
-# README
+##Chart.jsを使ったチャート表示
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+・CSVからデータを取り込み、Chart.jsを用いて加工したデータをチャート表示
 
-Things you may want to cover:
+・主な目的はデータの加工・表示
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
